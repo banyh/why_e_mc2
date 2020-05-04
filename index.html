@@ -1,50 +1,492 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/league.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-fullscreen>
+				<h1>為什麼$E=mc^2$</h1>
+			</section>
+			<section data-fullscreen>
+				<h3>本次分享主題：狹義相對論</h3>
+				<table>
+					<tr>
+						<td width="30%"><img
+								src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg"></td>
+						<td style="vertical-align:middle;">
+							<ul>
+								<li>愛因斯坦(1879-1955)</li>
+								<li>1905年，發表狹義相對論：慣性系下的時空理論</li>
+								<li>1915年，發表廣義相對論：加速系(重力場)的時空理論</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h1>空間相對</h1>
+			</section>
+			<section data-fullscreen>
+				<h3>要描述空間，需要一個座標系</h3>
+				<table>
+					<tr>
+						<td width="40%"><img
+								src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Aristotle_Altemps_Inv8575.jpg">
+						</td>
+						<td style="vertical-align:middle;">
+							亞里斯多德認為，地球就是座標系的原點，所有星體都是固定在透明球面上繞著地球轉。
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h3>但天動說無法解釋行星逆行現象</h3>
+				<table>
+					<tr>
+						<td width="50%"><img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Retrograde_Motion.bjb.svg/1200px-Retrograde_Motion.bjb.svg.png">
+						</td>
+						<td style="vertical-align:middle;">
+							Planet在希臘文的原意是漫游者，表示會在天空不規律的運動。
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h3>西元150年，托勒密提出新版的天動說</h3>
+				<table>
+					<tr>
+						<td width="40%"><img
+								src="https://upload.wikimedia.org/wikipedia/commons/1/16/Ptolemy_16century.jpg"></td>
+						<td style="vertical-align:middle;">
+							行星會固定在某個圓盤上，然後圓盤固定在透明球面上，以地球為中心旋轉。
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h3>西元1536年，哥白尼創立了「日心說」</h3>
+				<table>
+					<tr>
+						<td width="40%"><img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Nikolaus_Kopernikus.jpg/440px-Nikolaus_Kopernikus.jpg">
+						</td>
+						<td style="vertical-align:middle;">
+							<p>太陽是宇宙的中心，地球和其他行星都繞太陽運行。</p>
+							<p>因此太陽才是座標系的原點。</p>
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h3>伽利略：絕對運動不存在</h3>
+				<table>
+					<tr>
+						<td width="40%"><img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Galileo.arp.300pix.jpg/976px-Galileo.arp.300pix.jpg">
+						</td>
+						<td style="vertical-align:middle;">
+							在飛機上看著地面飛快後退，到底是飛機在動還是地面在動?
+							<p></p>在飛機上作所有的物理實驗，都無法證明我們是否在運動中。
+							<p></p>因此「絕對運動」變成一個多餘的概念。
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h3>Occam's Razor</h3>
+				<table>
+					<tr>
+						<td width="40%"><img
+								src="https://cdn.britannica.com/48/130648-004-AD39156F/William-of-Ockham.jpg"></td>
+						<td style="vertical-align:middle;">
+							當兩個理論解釋能力相同時，應該選擇假設較少的那一個。
+							<p></p>無論以飛機或地面為空間原點，都不影響實驗結果，所以絕對座標的概念是多餘的。
+							<p></p>結論：空間是相對的。
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h1>光速的不變性</h1>
+			</section>
+			<section data-fullscreen>
+				<h3>電生磁</h3>
+				1821年，奧斯特發現電流通過線圈，會產生磁場
+				<table>
+					<tr>
+						<td width="40%"><img src="https://upload.wikimedia.org/wikipedia/commons/7/79/%C3%98rsted.jpg">
+						</td>
+						<td style="vertical-align:middle;"><img
+								src="https://static1.squarespace.com/static/54ecc6b4e4b01dbc251f49a7/t/5be46defcd83661e6a31bd85/1541697017427/el1.jpg?format=1500w">
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h3>磁生電</h3>
+				1831年，法拉第發現電磁感應現象，將磁鐵穿過線圈，磁場的變化會產生電流。
+				<table>
+					<tr>
+						<td width="30%"><img
+								src="https://66.media.tumblr.com/6b08c8145cb2444421ce652bc959cab0/tumblr_nv22qlUEB91tenh4mo1_1280.jpg">
+						</td>
+						<td><img src="https://physicsmax.com/wp-content/uploads/2014/08/1570.jpg"></td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h3>場(Field)</h3>
+				<table>
+					<tr>
+						<td width="50%"><img src="https://bitescis.org/wp-content/uploads/2019/04/magnet.png"></td>
+						<td style="vertical-align:middle;">
+							法拉第為了描述電磁感應，所以想像磁鐵的週圍會產生磁場。
+							<p></p>磁場由無限多條磁力線組成，磁力線沒有起終點，而是環狀或延伸到無限遠。
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h3>電磁場</h3>
+				<table>
+					<tr>
+						<td width="40%"><img
+								src="https://www.poeticous.com/system/poets/photos/000/000/227/large/James-Clerk-Maxwell.jpeg?1368746266">
+						</td>
+						<td style="vertical-align:middle;">
+							1861年，馬克士威整理過去電磁學的研究，整理為20條微分方程，並且引入電磁場的概念。
+							<p></p>經過一段時間研究，馬克士威提出了電磁波方程式。
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h3>分子渦流模型</h3>
+				<table>
+					<tr>
+						<td width="30%"><img
+								src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Molecular_Vortex_Model.jpg">
+						</td>
+						<td style="vertical-align:middle;">
+							<p></p>每根磁力線想像成水管，中間有某種流體繞著軸心旋轉。
+							<p></p>為了避免流體之間互相摩擦，水管中間有微小圓珠，以垂直方向旋轉。
+							<p></p>如果圓珠移動的方向和水管相同，就形成電流。
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h3>位移電流</h3>
+				<table>
+					<tr>
+						<td width="50%"><img src="https://pic2.zhimg.com/v2-c44759bef8688b0c1861f48f4b2bcb09_b.gif">
+						</td>
+						<td style="vertical-align:middle;">
+							<p></p>馬克士威為了使方程式在數學上沒有矛盾，所以加入「位移電流」。
+							<p></p>加入位移電流後，可以將馬克士威方程式，以波動方程式表達。
+							<p></p>電場和磁場互相垂直，而電場、磁場也垂直於前進的方向。
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h3>光是一種電磁波</h3>
+				<p>馬克士威發現電磁場傳播的速度，等於電場和磁場的強度比，計算結果是每秒299792458公尺，很接近法國科學家發現的光速。</p>
+				<p>公式中沒有任何地方提到波源或接收裝置的速度。</p>
+				<p>於是他大膽假設，光是一種電磁波，而光速則是光在「乙太」傳播的速度。</p>
+			</section>
+			<section data-fullscreen>
+				<h3>乙太</h3>
+				<table>
+					<tr>
+						<td width="50%"><img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/AetherWind.svg/1200px-AetherWind.svg.png">
+						</td>
+						<td style="vertical-align:middle;">
+							<p></p>因為光是一種波，當時物理學家認為必然存在某種物質作為傳播的介質：「乙太」。
+							<p></p>按照當時的猜想，乙太無所不在，沒有質量，絕對靜止。乙太充滿整個宇宙，電磁波可在其中傳播。
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h3>光速實驗</h3>
+				<table>
+					<tr>
+						<td width="20%"><img
+								src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Albert_Abraham_Michelson2.jpg">
+						</td>
+						<td width="20%"><img
+								src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Edward_Williams_Morley.jpg">
+						</td>
+						<td style="vertical-align:middle;">
+							<p></p>當時的科學家相信，如果以太存在，有時候地球是順行、有時候是逆行，所以光速應該會隨時間改變。
+							<p></p>但邁克生和莫立用精確測量，發現全年任何時間、任何方向，光的速度都不變。
+							<p></p>所以「乙太」的概念是多餘的，應該被 Occam’s Razor 切掉。
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h1>時間相對</h1>
+			</section>
+			<section data-fullscreen>
+				<h3>狹義相對論有兩條公理</h3>
+				<ul>
+					<li>第一條：馬克士威方程式是對的</li>
+					<li style="margin-left: 80px;">光速在真空中永遠不變 → 光速不變性</li>
+					<li>第二條：遵循伽利略的觀點</li>
+					<li style="margin-left: 80px;">沒有實驗能測出絕對速度 → 空間相對</li>
+				</ul>
+			</section>
+			<section data-fullscreen>
+				在一台高速行駛的火車上，天花板有一個裝置，會射出光束照向地板。天花板和地板的距離是1公尺。
+				<img src="images/light-1.png">
+			</section>
+			<section data-fullscreen>
+				對火車上的人來說，他看到光線走的距離是1公尺。因為光速不變，所以他測量到的時間是 $t_2 = \frac{1}{c}$。
+				<img src="images/light-1.png">
+			</section>
+			<section data-fullscreen>
+				對火車外的觀察者來說，因為火車在前進，所以他看到的光束是斜的。
+				<img src="images/light-3.png">
+			</section>
+			<section data-fullscreen>
+				假設光束抵達的時間是 $t_1$，則火車前進距離是 $vt_1$。光束前進的距離是 $ct_1$。
+				<img src="images/light-3.png">
+			</section>
+			<section data-fullscreen>
+				<p></p>因此 $(ct_1)^2 = 1^2 + (vt_1)^2$
+				<p></p>$t_1 = \frac{1}{\sqrt{c^2 - v^2}}$
+				<p></p>因為 $t_2 = \frac{1}{c}$
+				<p></p>所以 $t_1 = t_2 \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} = t_2 \gamma$
+				<p></p>$\gamma$ 代表速度$v$時，時間的壓縮比例
+			</section>
+			<section data-fullscreen>
+				<p></p>當火車上的人經過一秒時，月台上的人經過了 $\gamma$ 秒
+				<p></p>只要 $v < c$，則 $\gamma> 1$
+					<p></p>當 $v$ 為時速300公里時，$\gamma$ 大約是 1.0000000000039
+					<p></p>當 $v$ 為光速的90%時，$\gamma$ 大約是 2.294
+					<p></p>結論：時間是相對的，相對於觀察者與被觀察者的速度
+			</section>
+			<section data-fullscreen>
+				<h1>不變性</h1>
+			</section>
+			<section data-fullscreen>
+				<h3>什麼是不變性?</h3>
+				<ul>
+					<li>重力系統具有旋轉不變性及平移不變性</li>
+					<li>不管你怎麼旋轉，重力都不會改變，表示重力具有旋轉不變性</li>
+					<li style="margin-left:80px;">旋轉不變性中，角動量守恆</li>
+					<li>不管你怎麼移動，重力都不會改變，表示重力具有平移不變性</li>
+					<li style="margin-left:80px;">平移不變性中，動量守恆</li>
+				</ul>
+			</section>
+			<section data-fullscreen>
+				<h3>旋轉不變性的應用</h3>
+				<ul>
+					<li>摩擦力使地球的角動量不斷減少</li>
+					<li>但在地月系統中，角動量守恆，所以月球的角動量增加</li>
+					<li>因為月球轉速增加，所以會慢慢移到較遠的地方</li>
+				</ul>
+			</section>
+			<section data-fullscreen>
+				<h3>時間、空間都不具有不變性</h3>
+				<ul>
+					<li>我們目前遇到最大的問題，就是時間和空間都不具有不變性</li>
+					<li>物理學的公式，只能包含不變性的量</li>
+					<li>例如 $v = \frac{x}{t}$，當時間、空間都是相對於觀察者，是否還成立? </li>
+				</ul>
+			</section>
+			<section data-fullscreen>
+				<h3>閔考斯基：時空不變性</h3>
+				<table>
+					<tr>
+						<td width="40%"><img src="https://pbs.twimg.com/media/DC6F2oOXsAAOoQw.jpg:large"></td>
+						<td style="vertical-align:middle;">
+							<p></p>愛因斯坦在瑞士讀大學時，修過閔考斯基的數學課，但是出席率不高，而閔考斯基對這個學生也沒什麼好印象。
+							<p></p>閔考斯基認為，時間和空間合起來的四維座標裡，時空中的距離具有不變性。
+							<p></p>時空不變性：當觀察者改變時，雖然時間距離 $t$ 及空間距離 $x$ 都會改變，但可以得到相同的時空距離 $s$。
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h3>勞倫茲變換</h3>
+				<table>
+					<tr>
+						<td width="30%"><img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/H_A_Lorentz_%28Nobel%29.jpg/210px-H_A_Lorentz_%28Nobel%29.jpg">
+						</td>
+						<td style="vertical-align:middle;">
+							<p></p>邁克生和莫立發現任何地點、任何方向的光速都是不變的，否定了「乙太」的存在。
+							<p></p>勞倫茲為了證明「乙太」存在，只好推導一個方程式，試圖證明「乙太」在高速運動時，時間和空間會收縮。
+							<p></p>$$ x' = \frac{x - vt}{\sqrt{1 - \frac{v^2}{c^2}}}, t' = \frac{t -
+							\frac{v}{c^2}x}{\sqrt{1 - \frac{v^2}{c^2}}} $$
+							<p></p>
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<p></p>但勞倫茲並沒有證明「乙太」存在，反而是愛因斯坦以此為基礎發表相對論，證明「乙太」不需存在。
+				<p></p>勞倫茲變換實際上代表時空不變性。$s(x, t) = s(x', t')$
+				<p></p>所以能夠符合的公式為：$s^2 = (ct)^2 - x^2$
+				<p></p>這種形態的公式，不是歐式幾何，而是雙曲幾何。
+			</section>
+			<section data-fullscreen>
+				<h3>雙曲幾何</h3>
+				<table>
+					<tr>
+						<td width="30%"><img
+								src="https://study.com/cimages/multimages/16/triangle_in_hyperbolic_geometry.png"></td>
+						<td style="vertical-align:middle;">
+							<p></p>又稱為羅氏幾何(羅巴切夫斯基幾何)。
+							<p></p>與歐氏幾何的差別在於第五條『平行公設』不成立。
+							<p></p>凡是不涉及到平行公理的幾何命題，在歐式幾何中如果是正確的，在羅式幾何中也同樣是正確的。
+							<p></p>「曲率」就代表時空的彎曲程度。
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				在時空維度中，原點代表「此時此地」。<br>$X$ 軸表示空間距離。$Y$ 軸表示時間距離。
+				<img src="images/axis-1.png">
+			</section>
+			<section data-fullscreen>
+				如果要把時間、空間放同一個座標系，必須有相同的單位。<br>所以時間會乘上 $c$，變成 $ct$。
+				<img src="images/axis-1.png">
+			</section>
+			<section data-fullscreen>
+				火車以速度 $v$ 前進時間 $t$，火車外的觀察者看到的火車會在 $A$ 點，火車上的觀察者看到的火車會在 $B$ 點。
+				<img src="images/axis-1.png">
+			</section>
+			<section data-fullscreen>
+				假設火車上的觀察者經過了時間 $t$，則時間距離為 $ct$，空間距離為 $0$，時空距離為
+				$$ s^2 = (ct)^2 - 0$$
+				$$ s = ct $$
+				假設火車外的觀察者經過了時間 $T$，則時間距離為 $cT$，空間距離為 $vT$，時空距離為
+				$$ s^2 = (cT)^2 - (vT)^2 = (c^2 - v^2)T^2 $$
+				因為時空不變性，所以 $(c^2 - v^2)T^2 = c^2t^2$，因此 $T = \gamma t$
+			</section>
+			<section data-fullscreen>
+				<h3>逝者如斯夫，不舍晝夜</h3>
+				<p></p>我們所有人都以光速在時空中前進。
+				<p></p>在空間中的速度越快，在時間中的速度就越慢。
+			</section>
+			<section data-fullscreen>
+				<h3>孿生子矛盾</h3>
+				<table>
+					<tr>
+						<td width="40%"><img src="images/axis-2.png"></td>
+						<td style="vertical-align:middle;">
+							<p></p>假設有一對孿生子，哥哥坐著飛船，以超高速離開地球。
+							<p></p>以哥哥為觀察者，會認為地球快速離開飛船，所以弟弟變老的很慢。
+							<p></p>以弟弟為觀察者，會發現飛船快速離開地球，所以哥哥變老的很慢。
+							<p></p>如果哥哥某一天回到地球，誰會比較年輕?
+						</td>
+					</tr>
+				</table>
+			</section>
+			<section data-fullscreen>
+				<h1>時空中的動量</h1>
+			</section>
+			<section data-fullscreen>
+				<h3>空間動量</h3>
+				<p></p>物理學中的動量是 $p=mv$，其中速度 $v$ 是一種向量。
+				<p></p>系統中的動量會守恆，例如多個撞球相撞，相撞前後的動量總和不變。
+				<p></p>如果相撞後的動量總和改變了，則速度差會轉換為能量 $k = \frac{1}{2} m v^2$。
+			</section>
+			<section data-fullscreen>
+				<h3>時空動量</h3>
+				<p></p>四維時空中，所有物體都以速度 $c$ 前進，所以時空動量是 $mc$。
+				<p></p>時空動量可以分解為時間動量、空間動量，但具體要怎麼分解，要看觀察者的相對速度。
+				<p></p>在相對速度為 $0$ 時，只有時間分量 $mc$。
+				<p></p>在相對速度為 $v$ 時，時間分量為 $\gamma c$，空間分量為 $\gamma v$
+				<p></p>所以時間動量為 $\gamma m c$，空間動量為 $\gamma m v$
+				<p></p>當速度比光速小很多時，$\gamma \approx 1$，因此空間動量 $\gamma m v \approx m v$ 向下相容。
+			</section>
+			<section data-fullscreen>
+				<h3>時間動量</h3>
+				<p></p>當速度小於光速的1%時，$\gamma \approx 1 + \frac{v^2}{2c^2}$，這個近似值的誤差很小。
+				<p></p>因為時空動量守恆、空間動量也守恆，所以時間動量 $\gamma m c$ 也必須守恆。
+				<p></p>乘上一個常數後，$\gamma m c^2$ 也會守恆。
+				<p></p>$$\gamma m c^2 = \left(1 + \frac{v^2}{2c^2} \right) mc^2 = mc^2 + \frac{1}{2}mv^2 $$
+			</section>
+			<section data-fullscreen>
+				<p></p>$\frac{1}{2}mv^2 $ 就是物理學上的動能。
+				<p></p>$mc^2$ 既然可以與動能相加，所以也是一種能量，這種能量只和質量有關。
+				<p></p>第一種解釋是能量守恆，靜止的物體自帶能量，能量是由質量而來。
+				<p></p>第二種解釋是質量守恆，$m + \frac{1}{2}m\frac{v^2}{c^2}$，有一種質量是由運動產生。
+			</section>
+			<section data-fullscreen>
+				<h3>質能轉換</h3>
+				<p></p>捕鼠夾被觸發時，可能會發出聲音(能量轉換成機械波)，或是跳起來(能量轉換為動能)。釋放後的補鼠夾，其質量會比較輕，因為質量轉換成能量了。
+				<p></p>剛買的熱湯，質量會比放涼之後的湯還要大。
+				<p></p>化學反應時，化學鍵會拆開重組，產生新分子，最後原子的總數不變，但是質量變輕了。
+				<p></p>兩個氫原子 $H$ 的質量會比氫分子 $H_2$ 更重，因為兩個氫原子結合時，會釋放能量，所以結合後反而變輕。
+			</section>
+			<section data-fullscreen>
+				<h3>總結</h3>
+				<p></p>狹義相對論的核心內容，是對時間及空間的描述。
+				<p></p>時間相對於觀察者，空間相對於觀察者。
+				<p></p>真正不變的，是時空座標的距離。
+				<p></p>愛因斯坦認為狹義相對論只是一種有趣的運動學，是基於前人的成就對已有理論的一種完善。
+				<p></p>但他對自己一手創立的廣義相對論非常自豪。
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			hash: true,
+			width: 1280,
+			height: 720,
+			transition: 'fade', // none/fade/slide/convex/concave/zoom
+			math: {
+				mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+				config: 'TeX-AMS_HTML-full', // See http://docs.mathjax.org/en/latest/config-files.html
+				// pass other options into `MathJax.Hub.Config()`
+				TeX: { Macros: { RR: "{\\bf R}" } }
+			},
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/highlight/highlight.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/math/math.js', async: true },
+			]
+		});
+	</script>
+</body>
+
 </html>
